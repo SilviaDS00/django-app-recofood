@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-gqs^-74$*p+6c9qslw--ghn&gj!ptk$tz*sa-5-70#g6zwjxrl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'django-app-recofood.onrender.com/', 'django-app-recofood.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'django-app-recofood.onrender.com/', 'django-app-recofood-qomn.onrender.com']
 
 CORS_ALLOW_ALL_ORIGINS = True
 
