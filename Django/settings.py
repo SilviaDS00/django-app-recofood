@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-gqs^-74$*p+6c9qslw--ghn&gj!ptk$tz*sa-5-70#g6zwjxrl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'django-app-recofood-qomn.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'django-app-recofood.onrender.com/', 'django-app-recofood.onrender.com']
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
@@ -79,7 +79,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Django.wsgi.application'
 
-CORS_ALLOW_ALL_ORIGINS = True
+
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases

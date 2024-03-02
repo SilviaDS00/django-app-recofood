@@ -149,3 +149,12 @@ def prediction_bmi(request):
         return JsonResponse(response_data)
     else:
         return JsonResponse({"message": "Método no permitido"}, status=405)
+
+
+@csrf_exempt
+def options(request):
+    response = HttpResponse()
+    response["Access-Control-Allow-Origin"] = "*"
+    response["Access-Control-Allow-Methods"] = "POST, OPTIONS"
+    response["Access-Control-Allow-Headers"] = "Content-Type"
+    return response

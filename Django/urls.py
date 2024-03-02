@@ -16,11 +16,12 @@ Including another URLconf
 """
 
 from django.urls import path
-from app.views import chatbot_view, prediction, prediction_bmi
+from app.views import chatbot_view, prediction, prediction_bmi, options
 
 urlpatterns = [
     path("", chatbot_view, name="chatbot_view"),  # Ruta para la página de inicio
     path("chatbot/", chatbot_view, name="chatbot"),  # Ruta para el chatbot
     path("prediction/", prediction, name="prediction"), # Ruta para la predicción de la imagen
-    path("prediction-bmi/", prediction_bmi, name="prediction_bmi") # Ruta para la predicción del BMI
+    path("prediction-bmi/", prediction_bmi, name="prediction_bmi"), # Ruta para la predicción del BMI
+    path("options/", options, name="options") # Ruta para las opciones
 ]
