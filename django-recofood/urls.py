@@ -19,9 +19,9 @@ from django.shortcuts import redirect
 from app import views
 
 def root_redirect(request):
-    return redirect('submit_cuestionario')
+    return redirect('prediction')
 
 urlpatterns = [
     path('', root_redirect),
-    path('submit-cuestionario/', views.submit_cuestionario, name='submit_cuestionario'),
+    path('prediction/', views.prediction, name='prediction'),
 ]
