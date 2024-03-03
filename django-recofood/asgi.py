@@ -1,5 +1,5 @@
 """
-ASGI config for backend_orienta_tech project.
+ASGI config for django-recofood project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend_orienta_tech.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django-recofood.settings')
 
 application = get_asgi_application()
